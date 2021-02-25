@@ -12,6 +12,10 @@ export default createGlobalStyle`
     background: #171717;
     color: #fff;
     -webkit-font-smooth: antialiased;
+    background-image: url("https://www.luby.com.br/wp-content/uploads/2020/05/Logo_Luby.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 20px 20px;
   }
 
   body, input, button{

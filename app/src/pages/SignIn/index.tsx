@@ -49,9 +49,9 @@ const SignIn: React.FC = () => {
 
         addToast({
           type: 'error',
-          title: 'Erro na busca',
+          title: 'Erro',
           description:
-            'Ocorreu um erro ao busca usuário, cheque as credenciais.',
+            'Ocorreu um erro ao busca usuário, cheque o usuário informado.',
         });
       }
     },
