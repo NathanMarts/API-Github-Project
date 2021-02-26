@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #171717;
+    background: #1d1d1d;
     color: #fff;
     -webkit-font-smooth: antialiased;
     background-image: url("https://www.luby.com.br/wp-content/uploads/2020/05/Logo_Luby.png");

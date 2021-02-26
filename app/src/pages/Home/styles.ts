@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromOpacity = keyframes`
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   width: 100vw;
@@ -16,6 +25,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 10px 1rem;
+
+  animation: ${appearFromOpacity} 1s;
 
   p {
     font-weight: 500;
@@ -42,6 +53,7 @@ export const Wrapper = styled.div`
   height: 90%;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #000;
 `;
 
 export const Content = styled.div`
@@ -52,8 +64,11 @@ export const Content = styled.div`
   position: relative;
   padding-top: 6rem;
 
+  animation: ${appearFromOpacity} 1s;
+
   .avatar {
     width: fit-content;
+    height: fit-content;
     position: absolute;
     left: 0;
     right: 0;
@@ -88,6 +103,10 @@ export const FollowContainer = styled.div`
   justify-content: space-around;
   padding: 1rem 0;
   text-align: center;
+
+  div {
+    cursor: pointer;
+  }
 `;
 
 export const BioContainer = styled.div`

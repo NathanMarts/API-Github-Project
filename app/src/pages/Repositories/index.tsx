@@ -2,9 +2,8 @@ import React from 'react';
 import { FiLock, FiStar, FiUnlock } from 'react-icons/fi';
 import Navbar from '../../components/Navbar';
 import { useAuth } from '../../hooks/Auth';
-import { Content, Header, Wrapper } from '../Followers/styles';
 
-import { Container, ReposContainer } from './styles';
+import { Container, Content, Header, ReposContainer, Wrapper } from './styles';
 
 const Repositories: React.FC = () => {
   const { user, repos } = useAuth();

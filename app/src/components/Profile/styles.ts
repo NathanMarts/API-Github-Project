@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromScale = keyframes`
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 export const Container = styled.div`
   background: #292929;
@@ -7,6 +18,8 @@ export const Container = styled.div`
   margin-top: 80px;
   position: relative;
   padding-top: 6rem;
+
+  animation: ${appearFromScale} 0.5s;
 
   .avatar {
     width: fit-content;
@@ -25,6 +38,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 10px 1rem;
+
+  animation: ${appearFromScale} 0.5s;
 
   p {
     font-weight: 500;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiLogOut } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 import Avatar from '../../components/Avatar';
 import Navbar from '../../components/Navbar';
 import { useAuth } from '../../hooks/Auth';
@@ -16,6 +17,7 @@ import {
 
 const Home: React.FC = () => {
   const { user, signOut } = useAuth();
+  const history = useHistory();
 
   return (
     <Container>
@@ -37,15 +39,15 @@ const Home: React.FC = () => {
             <p>{user.location}</p>
           </InfoContainer>
           <FollowContainer>
-            <div>
+            <div onClick={() => history.push('/followers')}>
               <h1>{user.followers}</h1>
               <p>Seguidores</p>
             </div>
-            <div>
+            <div onClick={() => history.push('/following')}>
               <h1>{user.following}</h1>
               <p>Seguindo</p>
             </div>
-            <div>
+            <div onClick={() => history.push('/repos')}>
               <h1>{user.public_repos}</h1>
               <p>Repo</p>
             </div>

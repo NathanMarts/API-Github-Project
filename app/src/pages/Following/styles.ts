@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromOpacity = keyframes`
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   width: 100vw;
@@ -14,6 +23,8 @@ export const Header = styled.header`
   width: 100%;
   padding: 1.5rem;
 
+  animation: ${appearFromOpacity} 1s;
+
   h4 {
     width: 100%;
     text-align: center;
@@ -26,6 +37,7 @@ export const Wrapper = styled.div`
   height: 90%;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #000;
 `;
 
 export const Content = styled.div`
@@ -34,6 +46,8 @@ export const Content = styled.div`
   height: calc(100% - 66px);
   position: relative;
   overflow: auto;
+
+  animation: ${appearFromOpacity} 1s;
 
   ::-webkit-scrollbar-track {
     background-color: #323232;
