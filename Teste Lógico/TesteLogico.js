@@ -144,7 +144,7 @@ export const shareArray = (array, valor) => {
 //  10) Implemente um método que encontre os valores comuns entre dois arrays.
 //  Entrada do método ([6, 8], [8, 9]), Resultado do método: [8]
 
-const shareArray = (array1, array2) => {
+const seacherEqualityValues = (array1, array2) => {
   const newArray = [];
 
   for (let index = 0; index < array1.length; index++) {
