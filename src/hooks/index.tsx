@@ -2,7 +2,11 @@ import React from 'react';
 import { AuthProvider } from './Auth';
 import { ToastProvider } from './Toast';
 
-const AppProvider: React.FC = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const AppProvider: React.FC<Props> = ({ children }) => {
   return (
     <AuthProvider>
       <ToastProvider>{children}</ToastProvider>

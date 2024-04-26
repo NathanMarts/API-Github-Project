@@ -49,9 +49,13 @@ interface AuthContextData {
   signOut(): void;
 }
 
+interface Props {
+  children: React.ReactNode;
+}
+
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
-export const AuthProvider: React.FC = ({ children }) => {
+export const AuthProvider: React.FC<Props> = ({ children }) => {
   const [data, setData] = useState<AuthState>(() => {
     const user = localStorage.getItem('@GitApp:user');
     const follows = localStorage.getItem('@GitApp:follows');
@@ -71,7 +75,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(
-    async ({ name }) => {
+    async ({ name }: any) => {
       let response = await api.get(`https://api.github.com/users/${name}`);
 
       const user = response.data;

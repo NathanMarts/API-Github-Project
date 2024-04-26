@@ -25,8 +25,7 @@ const Route: React.FC<RouteProps> = ({
         return isPrivate === !!user ? (
           <Component />
         ) : (
-          <Redirect
-            to={{
+          <Redirect to={{
               pathname: isPrivate ? '/' : '/home',
               state: { from: location },
             }}
