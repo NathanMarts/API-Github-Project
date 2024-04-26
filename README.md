@@ -9,7 +9,7 @@ O projeto tem como objetivo consumir a API do GitHub para acessar e exibir infor
 - [x] Lista de Seguidores
 - [x] Lista de Seguindo
 - [x] Trocar Usuario Principal no Perfil
-- [x] Permanencia do Dados utilizando o localStorage
+- [x] Permanência dos Dados utilizando o localStorage
 
 ## Tecnologias Utilizadas
 
