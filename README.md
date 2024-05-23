@@ -15,5 +15,8 @@ O projeto tem como objetivo consumir a API do GitHub para acessar e exibir infor
 
 [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" height="40" />](https://www.typescriptlang.org/)  [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40" />](https://react.dev)  [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" width="40" height="40" />](https://axios-http.com/docs/intro) [<img src="https://styled-components.com/nav-logo.png" height="40" />](https://styled-components.com)
 
+## Prévia
+<img src="https://github.com/NathanMarts/API-Github-Project/blob/main/preview.gif?raw=true" />
+
 ## Status
 ![Concluído](https://img.shields.io/badge/status-Concluído-green)
